@@ -7,21 +7,19 @@ using FoundationsMastery.Interfaces;
 
 namespace FoundationsMastery.models
 {
-    class Factorial : IFactorial
+    public class Factorial : IFactorial
     {
-        public Factorial(int arg)
+        public Factorial()
         {
-            int factor = arg;
-        }
 
-        int factor { get; set; }
+        }
 
         public int Iterative(int n)
         {
             var x = 1;
             for (var i = 1; i <= n; i++)
             {
-                x *= i;
+                x*= i;
             }
 
             return x;
