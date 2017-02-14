@@ -48,6 +48,7 @@ namespace FoundationsMastery.models
 
         public string Interleave(IEnumerable<char> rhs)
         {
+            //add a blank space in between each char in the IEnurable<char> ???
             throw new NotImplementedException();
         }
 
