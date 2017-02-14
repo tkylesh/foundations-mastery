@@ -48,7 +48,12 @@ namespace FoundationsMastery.models
 
         public string Interleave(IEnumerable<char> rhs)
         {
-            //add a blank space in between each char in the IEnurable<char> ???
+            //should take two IEnumerable<char> arguments
+            //interweave the two arguments and return as one string
+            //i.e.
+            //var first = new string[] {"1","2","3"};
+            //var second = new string[] {"a","b","c"};
+            //return string "1a2b3c"
             throw new NotImplementedException();
         }
 
