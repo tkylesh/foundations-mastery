@@ -9,19 +9,29 @@ namespace FoundationsMastery.models
 {
     class Factorial : IFactorial
     {
-        public Factorial()
+        public Factorial(int arg)
         {
-
+            int factor = arg;
         }
+
+        int factor { get; set; }
 
         public int Iterative(int n)
         {
-            return n;
+            var x = 1;
+            for (var i = 1; i <= n; i++)
+            {
+                x *= i;
+            }
+
+            return x;
         }
 
         public int Recursive(int n)
         {
-            return n;
+            int x;
+            x = n * Iterative(n - 1);
+            return x;
         }
     }
 }
