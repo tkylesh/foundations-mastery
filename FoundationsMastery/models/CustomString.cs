@@ -56,5 +56,10 @@ namespace FoundationsMastery.models
         {
             throw new NotImplementedException();
         }
+
+        public virtual void nameOfClass()
+        {
+            Console.WriteLine("Default");
+        }
     }
 }
