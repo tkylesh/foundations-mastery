@@ -9,14 +9,19 @@ namespace FoundationsMastery.models
 {
     class Factorial : IFactorial
     {
+        public Factorial()
+        {
+
+        }
+
         public int Iterative(int n)
         {
-            throw new NotImplementedException();
+            return n;
         }
 
         public int Recursive(int n)
         {
-            throw new NotImplementedException();
+            return n;
         }
     }
 }
