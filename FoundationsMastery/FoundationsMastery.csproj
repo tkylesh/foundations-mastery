@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IFactorial.cs" />
     <Compile Include="Interfaces\ICustomString.cs" />
+    <Compile Include="models\CustomString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
