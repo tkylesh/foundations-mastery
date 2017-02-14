@@ -31,7 +31,7 @@ namespace FoundationsMastery.models
 
         public void Clear()
         {
-            Contents = "";
+            Contents = null;
         }
 
         public string Concat(IEnumerable<char> rhs)
