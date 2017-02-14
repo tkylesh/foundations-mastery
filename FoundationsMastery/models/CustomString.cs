@@ -46,7 +46,7 @@ namespace FoundationsMastery.models
             return concatString;
         }
 
-        public string Interleave(IEnumerable<char> rhs)
+        public string Interleave(IEnumerable<char> first, IEnumerable<char> second)
         {
             //should take two IEnumerable<char> arguments
             //interweave the two arguments and return as one string

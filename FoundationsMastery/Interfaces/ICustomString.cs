@@ -13,6 +13,6 @@ namespace FoundationsMastery.Interfaces
         string Print();
         string Concat(IEnumerable<char> rhs);
         void Clear();
-        string Interleave(IEnumerable<char> rhs);
+        string Interleave(IEnumerable<char> first, IEnumerable<char> second);
     }
 }
