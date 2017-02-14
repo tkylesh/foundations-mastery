@@ -29,6 +29,18 @@ namespace FoundationsMasteryTests
         }
 
         [TestMethod]
+        public void EnsureInterleaveMethodCorrect()
+        {
+            CustomString myString = new CustomString();
+            char[] mychars = new char[] { 'a', 'b', 'c' };
+            char[] mynums = new char[] { '1', '2', '3' };
+            string actualResult = myString.Interleave(mychars, mynums);
+            string expectedResult = "a1b2c3";
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
         public void EnsureIHaveContents()
         {
             char[] mychars = new char[] { 'a', 'b', 'c' };

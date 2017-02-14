@@ -54,7 +54,15 @@ namespace FoundationsMastery.models
             //var first = new string[] {"1","2","3"};
             //var second = new string[] {"a","b","c"};
             //return string "1a2b3c"
-            throw new NotImplementedException();
+            string result="";
+            char[] charArray = new char[] { };
+            for(var i = 0; i < first.Count(); i++)
+            {
+                charArray[i]=(first.ElementAt(i));
+                charArray[i+1]=(second.ElementAt(i));
+            }
+            result = charArray.ToString();
+            return result;
         }
 
         public string Print()
