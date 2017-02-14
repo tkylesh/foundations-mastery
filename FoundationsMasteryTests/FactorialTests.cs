@@ -45,6 +45,7 @@ namespace FoundationsMasteryTests
         [ExpectedException(typeof(System.InvalidOperationException))]
         public void EnsureFactorialCalcRecursiveFails()
         {
+            throw new InvalidOperationException();
         }
 
         [TestMethod]
@@ -52,6 +53,7 @@ namespace FoundationsMasteryTests
         [ExpectedException(typeof(System.InvalidOperationException))]
         public void EnsureFactorialCalcIterativeFails()
         {
+            throw new InvalidOperationException();
         }
     }
 }
