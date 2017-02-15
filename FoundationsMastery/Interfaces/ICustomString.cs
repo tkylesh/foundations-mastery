@@ -10,7 +10,7 @@ namespace FoundationsMastery.Interfaces
     {
         IEnumerable<char> Contents { set; get; }
         int Length { get; }
-        string Print();
+        void Print();
         string Concat(IEnumerable<char> rhs);
         void Clear();
         string Interleave(IEnumerable<char> first);

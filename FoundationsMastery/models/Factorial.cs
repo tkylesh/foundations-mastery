@@ -14,7 +14,7 @@ namespace FoundationsMastery.models
 
         }
 
-        public int Iterative(int n)
+        public virtual int Iterative(int n)
         {
             if(n < 1)
             {

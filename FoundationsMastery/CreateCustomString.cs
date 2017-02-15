@@ -13,8 +13,15 @@ namespace FoundationsMastery
         {
 
         }
+        public override void Clear()
+        {
+            base.Clear();
+        }
 
-        
+        public override void Print()
+        {
+            base.Print();
+        }
 
     }
 }

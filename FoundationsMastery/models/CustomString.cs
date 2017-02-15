@@ -30,7 +30,7 @@ namespace FoundationsMastery.models
             }
         }
 
-        public void Clear()
+        public virtual void Clear()
         {
             Contents = null;
         }
@@ -65,14 +65,10 @@ namespace FoundationsMastery.models
             return returnString;
         }
 
-        public string Print()
+        public virtual void Print()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(Contents.ToString());
         }
 
-        public virtual void nameOfClass()
-        {
-            Console.WriteLine("Default");
-        }
     }
 }
