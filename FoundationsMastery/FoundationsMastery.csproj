@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateCustomString.cs" />
+    <Compile Include="CreateFactorial.cs" />
     <Compile Include="Interfaces\IFactorial.cs" />
     <Compile Include="Interfaces\ICustomString.cs" />
     <Compile Include="models\CustomString.cs" />
