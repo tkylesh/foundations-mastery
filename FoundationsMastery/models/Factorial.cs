@@ -16,6 +16,10 @@ namespace FoundationsMastery.models
 
         public int Iterative(int n)
         {
+            if(n < 1)
+            {
+                throw new InvalidOperationException();
+            }
             var x = 1;
             for (var i = 1; i <= n; i++)
             {
@@ -27,6 +31,10 @@ namespace FoundationsMastery.models
 
         public int Recursive(int n)
         {
+            if (n < 1)
+            {
+                throw new InvalidOperationException();
+            }
             int x;
             x = n * Iterative(n - 1);
             return x;

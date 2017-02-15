@@ -47,7 +47,9 @@ namespace FoundationsMasteryTests
         [ExpectedException(typeof(System.InvalidOperationException))]
         public void EnsureFactorialCalcRecursiveFails()
         {
-            throw new InvalidOperationException();
+            Factorial factorial = new Factorial();
+
+            int actualResult = factorial.Recursive(0);
         }
 
 
@@ -58,7 +60,9 @@ namespace FoundationsMasteryTests
         [ExpectedException(typeof(System.InvalidOperationException))]
         public void EnsureFactorialCalcIterativeFails()
         {
-            throw new InvalidOperationException();
+            Factorial factorial = new Factorial();
+
+            int actualResult = factorial.Iterative(0);
         }
     }
 }
