@@ -31,10 +31,10 @@ namespace FoundationsMasteryTests
         [TestMethod]
         public void EnsureInterleaveMethodCorrect()
         {
-            CustomString myString = new CustomString();
             char[] mychars = new char[] { 'a', 'b', 'c' };
+            CustomString myString = new CustomString(mychars);
             char[] mynums = new char[] { '1', '2', '3' };
-            string actualResult = myString.Interleave(mychars, mynums);
+            string actualResult = myString.Interleave(mynums);
             string expectedResult = "a1b2c3";
 
             Assert.AreEqual(expectedResult, actualResult);

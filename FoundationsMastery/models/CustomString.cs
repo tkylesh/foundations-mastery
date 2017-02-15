@@ -50,23 +50,19 @@ namespace FoundationsMastery.models
 
         //zipper effect
         //uses content and IEnumberable 
-        public string Interleave(IEnumerable<char> first, IEnumerable<char> second)
+        public string Interleave(IEnumerable<char> rhs)
         {
-            //should take two IEnumerable<char> arguments
-            //interweave the two arguments and return as one string
-            //i.e.
-            //var first = new string[] {"1","2","3"};
-            //var second = new string[] {"a","b","c"};
-            //return string "1a2b3c"
-            string result="";
-            List<char> charList = new List<char>();
-            for(var i = 0; i < 3; i++)
+            string returnString = "";
+
+            //use Enumerable.Zip function
+            var zippedCollection = Contents.Zip(rhs, (first, second) => first.ToString()+second.ToString());
+
+            foreach (var item in zippedCollection)
             {
-                charList.Add(first.ElementAt(1));
-                charList.Add(second.ElementAt(i));
+                returnString += item;
             }
-            result = charList.ToString();
-            return result;
+            
+            return returnString;
         }
 
         public string Print()
