@@ -46,6 +46,9 @@ namespace FoundationsMastery.models
             return concatString;
         }
 
+
+        //zipper effect
+        //uses content and IEnumberable 
         public string Interleave(IEnumerable<char> first, IEnumerable<char> second)
         {
             //should take two IEnumerable<char> arguments
@@ -55,13 +58,13 @@ namespace FoundationsMastery.models
             //var second = new string[] {"a","b","c"};
             //return string "1a2b3c"
             string result="";
-            char[] charArray = new char[] { };
-            for(var i = 0; i < first.Count(); i++)
+            List<char> charList = new List<char>();
+            for(var i = 0; i < 3; i++)
             {
-                charArray[i]=(first.ElementAt(i));
-                charArray[i+1]=(second.ElementAt(i));
+                charList.Add(first.ElementAt(1));
+                charList.Add(second.ElementAt(i));
             }
-            result = charArray.ToString();
+            result = charList.ToString();
             return result;
         }
 

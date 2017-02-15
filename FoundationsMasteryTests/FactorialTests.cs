@@ -40,6 +40,8 @@ namespace FoundationsMasteryTests
 
         }
 
+        //Good when n >= 1
+        //so should throw exception if input less than 1
         [TestMethod]
         //Hint: what goes here to say an exception is expected?
         [ExpectedException(typeof(System.InvalidOperationException))]
@@ -48,6 +50,9 @@ namespace FoundationsMasteryTests
             throw new InvalidOperationException();
         }
 
+
+        //Good when n >= 1
+        //so should throw exception if input less than 1
         [TestMethod]
         //Hint: what goes here to say an exception is expected?
         [ExpectedException(typeof(System.InvalidOperationException))]
