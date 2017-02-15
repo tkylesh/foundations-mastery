@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoundationsMastery.models
 {
+    
     public class CustomString : ICustomString
     {
         public CustomString()
