@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 
 namespace FoundationsMastery
 {
-    class SpaceXDragon : SpaceCraft
+    public class SpaceXDragon : SpaceCraft
     {
         public SpaceXDragon()
         {
+            Name = "Dragon";
 
         }
 
-        public SpaceXDragon(string name): base(name)
-        {
-            Name = name;
-        }
 
         public override void FlySpaceCraft()
         {
@@ -27,7 +24,7 @@ namespace FoundationsMastery
         {
             get
             {
-                return base.NumberOfEngines;
+                return NumberOfEngines;
             }
 
             set

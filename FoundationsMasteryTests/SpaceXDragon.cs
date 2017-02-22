@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using FoundationsMastery;
 
 namespace FoundationsMasteryTests
 {
@@ -9,6 +10,9 @@ namespace FoundationsMasteryTests
         [TestMethod]
         public void EnsureSpaceXDragonInstance()
         {
+            SpaceXDragon Dragon = new SpaceXDragon();
+
+            Assert.IsNotNull(Dragon);
         }
     }
 }

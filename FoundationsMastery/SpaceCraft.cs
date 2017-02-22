@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FoundationsMastery
 {
-    class SpaceCraft
+    public class SpaceCraft
     {
         public SpaceCraft()
         {
