@@ -21,7 +21,7 @@ namespace FoundationsMastery
         public string Name { get; set; }
         public bool Active { get; set; }
         public string[] PlanetsLandedOn { get; set; }
-        public int NumberOfEngines { get; set; }
+        public virtual int NumberOfEngines { get; set; }
         public int TopSpeed { get; set; }
 
 
