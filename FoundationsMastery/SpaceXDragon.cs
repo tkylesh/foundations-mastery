@@ -9,8 +9,11 @@ namespace FoundationsMastery
     class SpaceXDragon : SpaceCraft
     {
 
-        SpaceCraft Dragon = new SpaceCraft("SpaceX Dragon");
+        public override void FlySpaceCraft()
+        {
+            Console.WriteLine("bbbbbbbblllllllllllassssssssssstttttttooooooooffffffff!!!!!!");
+        }
 
-        Dragon
+
     }
 }
