@@ -7,7 +7,7 @@ namespace FoundationsMasteryTests
     public class SpaceCraftTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void EnsureSpaceCraftInstance()
         {
         }
     }

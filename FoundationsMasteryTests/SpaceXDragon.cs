@@ -7,7 +7,7 @@ namespace FoundationsMasteryTests
     public class SpaceXDragon
     {
         [TestMethod]
-        public void TestMethod1()
+        public void EnsureSpaceXDragonInstance()
         {
         }
     }
