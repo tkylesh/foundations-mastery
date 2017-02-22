@@ -27,9 +27,9 @@ namespace FoundationsMastery
 
 
 
-        public virtual void FlySpaceCraft()
+        public virtual string FlySpaceCraft()
         {
-            Console.WriteLine("ppppppppppppphhhhhhhhhheeeeeeeeeeewwwwwwwwwwwwwwwwwww");
+            return "ppppppppppppphhhhhhhhhheeeeeeeeeeewwwwwwwwwwwwwwwwwww";
         }
 
     }

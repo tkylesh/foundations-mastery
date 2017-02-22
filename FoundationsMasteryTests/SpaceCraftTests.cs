@@ -14,5 +14,16 @@ namespace FoundationsMasteryTests
 
             Assert.IsNotNull(Falcon);
         }
+
+        [TestMethod]
+        public void EnsureSpaceCraftFlySpaceCraft()
+        {
+            SpaceCraft Falcon = new SpaceCraft("falcon");
+
+            string expected = "ppppppppppppphhhhhhhhhheeeeeeeeeeewwwwwwwwwwwwwwwwwww";
+            string actual = Falcon.FlySpaceCraft();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

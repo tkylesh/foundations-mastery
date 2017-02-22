@@ -14,12 +14,13 @@ namespace FoundationsMastery
 
         }
 
-
-        public override void FlySpaceCraft()
+        //virtual override method.
+        public override string FlySpaceCraft()
         {
-            Console.WriteLine("bbbbbbbblllllllllllassssssssssstttttttooooooooffffffff!!!!!!");
+            return "bbbbbbbblllllllllllassssssssssstttttttooooooooffffffff!!!!!!";
         }
 
+        //virtual override property.
         public override int NumberOfEngines
         {
             get
